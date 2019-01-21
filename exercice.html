@@ -1,15 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <title>JS-Meteo</title>
-
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="exercice.css">
 </head>
 <body>
 
+<header class="container">
 
+        <div class="row">
 
+            <div class="col-sm-12 text-center mt-4">
 
+                <h1 id="Nom"> Meteo pour la ville: </h1>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-2 mt-4" id="Erreur"></div>
+
+            <label class="col-sm-8 text-center mt-4">
+
+                <input class="col-sm-8" id="Ville" type="text" name="Ville">
+
+            </label>
+
+            <div class="col-sm-2 mt-4"></div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-4 mt-4"></div>
+
+            <button class="col-sm-4 btn mt-4" id="Valider" type="button"> Valider</button>
+
+            <div class="col-sm-4 mt-4"></div>
+
+        </div>
+
+</header>
+
+<section class="container">
+
+    <div class="row">
+
+        <div class="col-sm-3 mt-4"></div>
+
+        <div class="col-sm-6 mt-4" id="Date"> 00 / Mois / 0000</div>
+
+        <div class="col-sm-3 mt-4"></div>
+
+    </div>
+
+    <div class="row mt-4">
+
+        <div class="col-sm-6" id="Degres"> 0°</div>
+
+        <div class="col-sm-6 mt-4" id="Info">
+
+            <span id="Max"> Temp. max: x° </span>
+
+            <span class="mt-2" id="Min"> Temp. min: x° </span>
+
+            <span class="mt-2" id="Atmospherique"> Pres. atomosphérique : xx </span>
+
+            <span class="mt-2" id="Vent"> Vitesse du vent : xx km/h </span>
+
+            <span class="mt-2" id="Humidite"> Humidité : xx % </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="container-fluid">
+
+    <div class="row">
+
+        <div class="col-sm-2 mt-4 text-center">
+
+            <span id="longitude"> Longitude : xx </span>
+
+        </div>
+
+        <div class="col-sm-2 mt-4 text-center">
+
+            <span id="Latitude"> Latitude : xx </span>
+
+        </div>
+
+        <div class="col-sm-6 mt-4"></div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-12 mt-5">
+
+            <img id="Carte" src="" alt="Carte">
+
+        </div>
+
+    </div>
+
+</footer>
 
 <script src="exercice.js"></script>
 </body>
